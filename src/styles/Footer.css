@@ -1,0 +1,67 @@
+/* Footer Styling */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px; /* Adjusted padding for better responsiveness */
+  position: sticky; /* Fixed position at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+/* Prevent content from being hidden behind the footer */
+body {
+  padding-bottom: 60px; /* Adjust to match footer height */
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Footer Links */
+.footer a {
+  color: #00acee;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Footer */
+.dark .footer {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px; /* Adjust for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 10px; /* Further adjust for very small screens */
+  }
+
+  .footer a {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,121 @@
+.auth-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 8px;
+  background: linear-gradient(to right, #f6f6f6, #62553a);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.3rem 1.5rem;
+  position: relative;
+}
+
+.auth-logged-in {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.auth-button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(to right, #20211f, #ffb92c);
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  text-align: center;
+}
+
+.auth-button:hover {
+  background: #ca9206;
+}
+
+.auth-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjusted username position */
+.user-name {
+  bottom: 0;
+  background-color: #3d3d3d;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.1rem 1rem;
+  display: inline-block;
+  max-width: calc(100% - 300px); /* Limit max-width to allow space for buttons */
+}
+
+/* Dark mode toggle container adjustments */
+.dark-mode-toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 3px;
+}
+
+.dark-mode-toggle {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353535;
+  border-radius: 30px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .auth-header {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .user-name {
+    max-width: 80%; /* Allow better fitting within smaller screens */
+    margin-left: auto; /* Prevents it from shifting off-screen */
+    margin-right: auto;
+    display: block; /* Ensures it centers properly */
+    text-align: center;
+  }
+
+  .auth-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+
+  .auth-buttons {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) { 
+  .user-name {
+    max-width: 80%; /* Allow better fitting within smaller screens */
+    margin-left: auto; /* Prevents it from shifting off-screen */
+    margin-right: auto;
+    display: block; /* Ensures it centers properly */
+    text-align: center;
+  }
+}

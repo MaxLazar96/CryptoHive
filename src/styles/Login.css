@@ -1,0 +1,99 @@
+/* Login Page Styling */
+.login-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+input:focus {
+    border-color: #ca9206;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffb92c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e1e1e;
+    transform: scale(1.02); /* Subtle zoom effect */
+}
+
+button:active {
+    background-color: #ca9206;
+    transform: scale(0.98); /* Button presses inward */
+}
+
+/* Dark Mode Adjustments */
+body.dark .login-page {
+    background-color: #1e1e1e; /* Dark mode background */
+    border-color: #444;
+    color: #f9f9f9; /* Light text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark h2 {
+    color: #f9f9f9; /* Bright white heading for dark mode */
+}
+
+body.dark input {
+    background-color: #333;
+    border-color: #555;
+    color: #f9f9f9;
+}
+
+body.dark input:focus {
+    border-color: #ca9206;
+}
+
+body.dark button {
+    background-color: #ffb92c;
+}
+
+body.dark button:hover {
+    background-color: #ca9206;
+}
+
+body.dark button:active {
+    background-color: #ca9206;
+}

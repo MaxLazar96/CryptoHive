@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(to bottom, #f4f4f4, #b0abab) fixed;
+  color: #333;
+  line-height: 1.75;
+  transition: background 0.3s, color 0.3s;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding-bottom: 80px; /* Prevent Footer from covering content */
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background: #292c35;
+  color: white;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #e7b502, #d79400);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffd700;
+}
+
+
+
+/* Prevent content from overflowing */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Dark Mode Styles */
+.dark header {
+  background: linear-gradient(to right, #444, #222);
+}
+
+.dark .search-container {
+  background: #333; /* Adjusted dark mode background */
+  border: 1px solid #444; /* Clear border for search container */
+  border-radius: 8px; /* Add rounded corners */
+  padding: 1rem; /* Adjust padding */
+  color: white;
+}
+
+.dark .search-input {
+  background: #444;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.dark .search-button {
+  background: linear-gradient(90deg, #555, #444);
+  border-radius: 4px;
+}
+
+.dark .dropdown-menu {
+  background: #333; /* Dropdown background */
+  color: white; /* Dropdown text color */
+  border: 1px solid #444; /* Add border */
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto; /* Enable scroll if needed */
+  z-index: 1000; /* Ensure it displays above other elements */
+}
+
+.dark .dropdown-menu li {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dark .dropdown-menu li:hover {
+  background: #444; /* Highlight hovered item */
+}
+
+.dark .result-card,
+.dark .auth-header,
+
+
+.dark .result-card h3,
+.dark .result-card p,
+.dark .auth-header {
+  color: white;
+}
+
+body.dark .home-container {
+  background-color: #292c35;
+  color: white;
+}
+
+body.dark .header-section {
+  background-color: #333;
+  color: white;
+}
+
+body.dark .header-section .site-title,
+body.dark .header-section .site-description {
+  color: white;
+}
+
+body.dark .header-section img.logo {
+  filter: brightness(0.8);
+}
+
+body.dark .bee-animation-container img {
+  filter: brightness(0.8);
+}
+
+

@@ -1,0 +1,65 @@
+.sidebar {
+  width: 170px; /* Smaller width */
+  height: 200vh;
+  background-color: #f9f9f9; /* Matches login page background */
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Softer shadow to match login page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Spacing between items */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Matches login page transition */
+}
+
+.sidebar h3 {
+  font-size: 1rem;
+  color: #333; /* Matches login page text color */
+  margin-bottom: 15px;
+  margin-top: 40px;
+  transition: color 0.3s; /* Matches login page transition */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0c0c0c; /* Matches login page button text color */
+  font-size: 1rem;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease; /* Matches login page button transition */
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  background-color: #1e1e1e; /* Matches login page button hover background */
+  color: white; /* Matches login page button hover text color */
+  transform: scale(1.02); /* Subtle zoom effect, matches login button */
+}
+
+.sidebar a:active {
+  background-color: #ca9206; /* Matches login page button active background */
+  transform: scale(0.98); /* Button presses inward, matches login button */
+}
+
+/* Dark Mode Adjustments */
+body.dark .sidebar {
+  background-color: #1e1e1e; /* Matches dark mode login page background */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Matches dark mode shadow */
+}
+
+body.dark .sidebar h3 {
+  color: #f9f9f9; /* Matches dark mode login page text color */
+}
+
+body.dark .sidebar a {
+  color: #ffb92c; /* Matches dark mode login page button text color */
+}
+
+body.dark .sidebar a:hover {
+  background-color: #ca9206; /* Matches dark mode login page button hover background */
+  color: white; /* Matches dark mode login page button hover text color */
+}
+
+body.dark .sidebar a:active {
+  background-color: #ca9206; /* Matches dark mode login page button active background */
+}

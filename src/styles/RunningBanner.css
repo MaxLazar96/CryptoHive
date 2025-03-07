@@ -1,0 +1,36 @@
+.running-banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a; /* Dark mode background */
+    color: white;
+    padding: 10px 0;
+    border-top: 2px solid #333; /* Optional styling */
+    border-bottom: 2px solid #333; /* Optional styling */
+  }
+  
+  .running-banner-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 55s linear infinite; /* Adjusted speed */
+  }
+  
+  .banner-crypto-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1rem;
+    color: #f8f9fa;
+  }
+  
+  .banner-crypto-item strong {
+    color: #ffcc00; /* Highlighted crypto name */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

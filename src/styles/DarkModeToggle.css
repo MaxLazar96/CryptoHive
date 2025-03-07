@@ -1,0 +1,70 @@
+
+.dark-mode-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox-label {
+  background-color: #383636;
+  width: 60px;
+  height: 25px;
+  border-radius: 50px;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label:hover {
+  background: linear-gradient(to right, #444, #222); /* Darker hover effect */
+}
+
+.checkbox-label .ball {
+  background-color: #d79400 !important;
+  z-index: 3 !important;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 2px;
+  top: 0.5px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) !important; /* Add slight shadow to see if it helps */
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(25px);  /* Move correctly */
+  opacity: 1 !important;
+}
+
+.fa-moon,
+.fa-sun {
+  font-size: 14px;
+  color: #f1c40f;
+  position: absolute;
+  z-index: 2;
+}
+
+.fa-moon {
+  left: 7px; /* Adjust position */
+}
+
+.fa-sun {
+  right: 7px; /* Adjust position */
+}
+body.dark .checkbox-label .ball {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
