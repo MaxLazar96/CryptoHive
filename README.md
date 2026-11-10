@@ -5,8 +5,6 @@ A React web app that collects cryptocurrency news from several external APIs int
 > Team project, B.Sc. Software Engineering (Braude College), 4 students.
 > **My part:** I designed the app's architecture and built the entire back end (Firebase and the news-API data layer). I also built the search functions and helped with the UI design.
 
-![CryptoHive home page](docs/screenshot-home.png)
-<!-- Add a screenshot of the home page at docs/screenshot-home.png -->
 
 ## Features
 - **One news feed** built from several external crypto news APIs
